@@ -1,34 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="https://fairdataihub.org/images/hero/aireadi-logo.png" alt="logo" width="200" height="auto" />
 
-First, run the development server:
+<br />
+
+<h1>AI-READI Schemas</h1>
+
+<br />
+
+<p>
+  <a href="https://github.com/AI-READI/schemas/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/AI-READI/template.svg?style=flat-square" alt="contributors" />
+  </a>
+  <a href="https://github.com/AI-READI/schemas/stargazers">
+    <img src="https://img.shields.io/github/stars/AI-READI/template.svg?style=flat-square" alt="stars" />
+  </a>
+  <a href="https://github.com/AI-READI/schemas/issues/">
+    <img src="https://img.shields.io/github/issues/AI-READI/template.svg?style=flat-square" alt="open issues" />
+  </a>
+  <a href="https://github.com/AI-READI/schemas/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/AI-READI/template.svg?style=flat-square" alt="license" />
+  </a>
+  <a href="https://fairdataihub.org/fairshare">
+    <img src="https://raw.githubusercontent.com/fairdataihub/FAIRshare/main/badge.svg" alt="Curated with FAIRshare" />
+  </a>
+</p>
+
+</div>
+
+<br />
+
+---
+
+## Description
+
+This repository contains the schemas that applications in the AI-READI project use. The schemas are written in JSON Schema and are used to validate the data that is sent various services within the organization.
+
+## Getting started
+
+### Prerequisites/Dependencies
+
+Install the dependencies with:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the development server with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+<a href="https://github.com/AI-READI/schemas/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AI-READI/schemas" />
+</a>
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are always welcome!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For any developmental standards to follow, add them directly to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-## Deploy on Vercel
+## Issues and Feedback
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To report any issues with the software, suggest improvements, or request a new feature, please open a new issue via the [Issues](https://github.com/AI-READI/template/issues) tab. Provide adequate information (operating system, steps leading to error, screenshots) so we can help you efficiently.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This work is licensed under
+[MIT](https://opensource.org/licenses/mit). See [LICENSE](https://github.com/AI-READI/schemas/blob/main/LICENSE) for more information.
+
+<a href="https://aireadi.org" >
+  <img src="https://www.channelfutures.com/files/2017/04/3_0.png" height="30" />
+</a>
+
+## How to cite
+
+If you are using this software or reusing the source code from this repository for any purpose, please cite:
+
+```bash
+    ADD Citation here
+```
+
+## Acknowledgements
+
+This project is funded by the NIH under award number 1OT2OD032644. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH.
+
+Add any other acknowledgements here.
+
+<br />
+
+---
+
+<br />
+
+<div align="center">
+
+<a href="https://aireadi.org">
+  <img src="https://github.com/AI-READI/AI-READI-logo/raw/main/logo/png/option2.png" height="200" />
+</a>
+
+</div>
