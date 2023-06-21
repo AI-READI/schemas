@@ -1,0 +1,5 @@
+[
+  "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/dataset_description.schema.json",
+  "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/participants.schema.json",
+  "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/readme.schema.json"
+]
