@@ -16,7 +16,7 @@ console.log("Pulling schemas to public folder...");
 schemaListJSON.forEach((schema) => {
   // Download the file to the public folder
   const url = schema.url;
-  const filename = url.substring(url.lastIndexOf("/") + 1).split("?")[0];
+  const filename = schema.fileName;
   const path = `./public/files/${filename}`;
   console.log(`Downloading ${filename} to ${path}`);
 

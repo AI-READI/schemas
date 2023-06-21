@@ -3,18 +3,18 @@
     "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/dataset_description.schema.json",
     "title": "dataset_description.json",
     "description": "dataset_description.json is a top-level file that gives details about the source of the dataset, funding, and citation information. This file does not provide any actual description of the data.",
-    "fileName": "dataset_description.schema.json"
+    "fileName": "dataset_description.json"
   },
   {
     "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/participants.schema.json",
     "title": "participants.json",
     "description": "The purpose of this file is to describe properties of participants such as age, sex, handedness, species and strain.",
-    "fileName": "participants.schema.json"
+    "fileName": "participants.json"
   },
   {
     "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/readme.schema.json",
     "title": "README",
     "description": "This file should describe the dataset in more detail.",
-    "fileName": "readme.schema.json"
+    "fileName": "readme.json"
   }
 ]
