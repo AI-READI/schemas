@@ -6,6 +6,12 @@
     "fileName": "dataset_description.json"
   },
   {
+    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/study_description.schema.json",
+    "title": "study_description.json",
+    "description": "study_description.json is a top-level file that gives details about the study, such as the name of the study, the authors, and the ethics approval number.",
+    "fileName": "study_description.json"
+  },
+  {
     "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/participants.schema.json",
     "title": "participants.json",
     "description": "The purpose of this file is to describe properties of participants such as age, sex, handedness, species, and strain.",
@@ -16,12 +22,6 @@
     "title": "README",
     "description": "This file should describe the dataset in more detail.",
     "fileName": "readme.json"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/study_description.schema.json",
-    "title": "study_description.json",
-    "description": "study_description.json is a top-level file that gives details about the study, such as the name of the study, the authors, and the ethics approval number.",
-    "fileName": "study_description.json"
   },
   {
     "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/folder_structure.schema.json",
