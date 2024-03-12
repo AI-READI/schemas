@@ -1,12 +1,12 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/dataset_description.schema.json",
+    "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/public/schemas/dataset_description.schema.json",
     "title": "dataset_description.json",
     "description": "dataset_description.json is a top-level file that gives details about the source of the dataset, funding, and citation information. This file does not provide any actual description of the data.",
     "fileName": "dataset_description.json"
   },
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/study_description.schema.json",
+    "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/public/schemas/study_description.schema.json",
     "title": "study_description.json",
     "description": "study_description.json is a top-level file that gives details about the study, such as the name of the study, the authors, and the ethics approval number.",
     "fileName": "study_description.json"
