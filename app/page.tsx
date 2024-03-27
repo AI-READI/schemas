@@ -3,7 +3,7 @@ import schemaListJSON from "../data/fileList.json" assert { type: "json" };
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start justify-start p-24">
+    <main className="flex min-h-screen flex-col items-start justify-start p-24 bg-black text-slate-50">
       <a
         className="flex flex-row space-x-4 items-end justify-start px-5"
         href="https://aireadi.org"
@@ -28,22 +28,39 @@ export default function Home() {
 
       {schemaListJSON.map((schema) => {
         return (
-          <a
-            href={`/files/${schema.fileName}`}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            key={schema.fileName}
-            rel="noopener noreferrer"
-          >
-            <h2 className="mb-3 text-2xl font-semibold">
-              {schema.title}
-              {` `}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className="m-0 text-sm opacity-50">{schema.description}</p>
-          </a>
+          <div key={schema.fileName} className="relative px-4 mb-8">
+            <h3 className="text-2xl font-semibold">{schema.title}</h3>
+
+            <p className="text-sm text-slate-200 mt-1 mb-3">
+              {schema.description}
+            </p>
+
+            <hr className="border-slate-700 w-full h-[1px] mt-4 mb-5 px-5 border-dashed" />
+
+            <ul>
+              {schema.versions.map((version) => {
+                return (
+                  <li
+                    key={version.label}
+                    className="ml-4 border rounded-md mb-2 w-max border-transparent hover:border-slate-500 transition-all cursor-pointer"
+                  >
+                    <a
+                      href={`/files/${version.fileLabel}/${schema.fileName}`}
+                      className="w-full flex items-center px-3 py-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p className="text-2xl font-semibold">
+                        {version.label}
+                        {` `}
+                        <span className="">-&gt;</span>
+                      </p>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         );
       })}
     </main>

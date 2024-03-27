@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "next-dev": "next dev",
-    "dev": "npm-run-all pull-files next-dev",
+    "dev": "npm-run-all scripts:pull:files next-dev",
     "next-build": "next build",
-    "build": "npm-run-all pull-files next-build",
+    "build": "npm-run-all scripts:pull:files next-build",
     "start": "next start",
     "lint": "next lint",
-    "pull-files": "node ./scripts/pull-files.mjs"
+    "scripts:pull:files": "tsx ./scripts/pull-files.ts"
   },
   "dependencies": {
     "@types/node": "20.3.1",
@@ -26,6 +26,7 @@
     "typescript": "5.1.3"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "tsx": "^4.7.1"
   }
 }
