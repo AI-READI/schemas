@@ -34,6 +34,23 @@
     ]
   },
   {
+    "title": "dataset_structure_description.json",
+    "fileName": "dataset_structure_description.json",
+    "description": "dataset_structure_description.json is a top-level file that describes the structure of the dataset, including the names of the files and the relationships between them. This file does not contain any actual data, but provides a roadmap for navigating the dataset.",
+    "versions": [
+      {
+        "url": "https://github.com/AI-READI/cds-specification/blob/main/docs/schemas/dataset_structure_description.schema.json",
+        "label": "latest",
+        "fileLabel": "latest"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.0/docs/schemas/dataset_structure_description.schema.json",
+        "label": "v0.1.0",
+        "fileLabel": "v0.1.0"
+      }
+    ]
+  },
+  {
     "title": "participants.json",
     "fileName": "participants.json",
     "description": "The purpose of this file is to describe properties of participants such as age, sex, handedness, species, and strain.",
