@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: "0 0 * * 1,4"
 
 jobs:
   add-empty-commit:
@@ -25,4 +25,4 @@ jobs:
         run: "git commit -m 'release: :rocket: rebuild website' --allow-empty --no-verify"
 
       - name: Push to repo
-        run: 'git push origin main'
+        run: "git push origin main"

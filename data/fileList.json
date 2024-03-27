@@ -1,32 +1,89 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/public/schemas/dataset_description.schema.json",
     "title": "dataset_description.json",
+    "fileName": "dataset_description.json",
     "description": "dataset_description.json is a top-level file that gives details about the source of the dataset, funding, and citation information. This file does not provide any actual description of the data.",
-    "fileName": "dataset_description.json"
+    "versions": [
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/schemas/dataset_description.schema.json",
+        "label": "latest",
+        "fileLabel": "latest"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.0/docs/schemas/dataset_description.schema.json",
+        "label": "v0.1.0",
+        "fileLabel": "v0.1.0"
+      }
+    ]
   },
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/public/schemas/study_description.schema.json",
     "title": "study_description.json",
+    "fileName": "study_description.json",
     "description": "study_description.json is a top-level file that gives details about the study, such as the name of the study, the authors, and the ethics approval number.",
-    "fileName": "study_description.json"
+    "versions": [
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/schemas/study_description.schema.json",
+        "label": "latest",
+        "fileLabel": "latest"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.0/docs/schemas/study_description.schema.json",
+        "label": "v0.1.0",
+        "fileLabel": "v0.1.0"
+      }
+    ]
   },
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/participants.schema.json",
+    "title": "dataset_structure_description.json",
+    "fileName": "dataset_structure_description.json",
+    "description": "dataset_structure_description.json is a top-level file that describes the structure of the dataset, including the names of the files and the relationships between them. This file does not contain any actual data, but provides a roadmap for navigating the dataset.",
+    "versions": [
+      {
+        "url": "https://github.com/AI-READI/cds-specification/blob/main/docs/schemas/dataset_structure_description.schema.json",
+        "label": "latest",
+        "fileLabel": "latest"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.0/docs/schemas/dataset_structure_description.schema.json",
+        "label": "v0.1.0",
+        "fileLabel": "v0.1.0"
+      }
+    ]
+  },
+  {
     "title": "participants.json",
+    "fileName": "participants.json",
     "description": "The purpose of this file is to describe properties of participants such as age, sex, handedness, species, and strain.",
-    "fileName": "participants.json"
+    "versions": [
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/participants.schema.json",
+        "label": "latest",
+        "fileLabel": ""
+      }
+    ]
   },
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/readme.schema.json",
     "title": "README",
+    "fileName": "readme.json",
     "description": "This file should describe the dataset in more detail.",
-    "fileName": "readme.json"
+    "versions": [
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/readme.schema.json",
+        "label": "latest",
+        "fileLabel": ""
+      }
+    ]
   },
   {
-    "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/folder_structure.schema.json",
     "title": "Folder Structure",
+    "fileName": "folder_structure.json",
     "description": "This is a schema for a folder structure that is used to store a dataset. It is based on the BIDS folder structure, but is not identical.",
-    "fileName": "folder_structure.json"
+    "versions": [
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/pyfairdatatools/main/pyfairdatatools/schemas/folder_structure.schema.json",
+        "label": "latest",
+        "fileLabel": ""
+      }
+    ]
   }
 ]
