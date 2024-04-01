@@ -39,7 +39,7 @@
     "description": "dataset_structure_description.json is a top-level file that describes the structure of the dataset, including the names of the files and the relationships between them. This file does not contain any actual data, but provides a roadmap for navigating the dataset.",
     "versions": [
       {
-        "url": "https://github.com/AI-READI/cds-specification/blob/main/docs/schemas/dataset_structure_description.schema.json",
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/main/docs/schemas/dataset_structure_description.schema.json",
         "label": "latest",
         "fileLabel": "latest"
       },
