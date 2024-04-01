@@ -45,7 +45,9 @@ export default function Home() {
                     className="ml-4 border rounded-md mb-2 w-max border-transparent hover:border-slate-500 transition-all cursor-pointer"
                   >
                     <a
-                      href={`/files/${version.fileLabel}/${schema.fileName}`}
+                      href={`https://schema.aireadi.org/${
+                        version.fileLabel ? `${version.fileLabel}/` : ""
+                      }${schema.fileName}`}
                       className="w-full flex items-center px-3 py-2"
                       target="_blank"
                       rel="noopener noreferrer"
