@@ -1,47 +1,57 @@
-import https from "https";
-import fs from "fs";
+/**
+ * This script is used to pull the schema files from the source
+ * and save them in bunny storage.
+ */
+import "dotenv/config";
 import schemaListJSON from "../data/fileList.json" assert { type: "json" };
-
-console.log("Delete the public/files folder...");
-
-if (!fs.existsSync("./public/files")) {
-  fs.mkdirSync("./public/files");
-} else {
-  fs.rmdirSync("./public/files", { recursive: true });
-  fs.mkdirSync("./public/files");
-}
-
-console.log("Pulling schemas to public folder...");
 
 schemaListJSON.forEach((schema) => {
   const { title, fileName, versions } = schema;
 
   console.log(`Pulling files for ${title}...`);
 
-  versions.forEach((version) => {
+  versions.forEach(async (version) => {
     const { url, label, fileLabel } = version;
 
-    // create the version folder
+    // Get the content of the file
+    const request = await fetch(url);
 
-    if (fileLabel && !fs.existsSync(`./public/files/${fileLabel}`)) {
-      fs.mkdirSync(`./public/files/${fileLabel}`);
+    if (!request.ok) {
+      console.error(`Failed to download ${url}`);
+      return;
     }
 
-    const filePath = fileLabel
-      ? `./public/files/${fileLabel}/${fileName}`
-      : `./public/files/${fileName}`;
-    console.log(`Downloading ${fileName} to ${filePath}...`);
+    const jsonData = await request.text();
 
-    const file = fs.createWriteStream(filePath);
-
-    const request = https.get(url, function (response) {
-      response.pipe(file);
-
-      // after download completed close filestream
-      file.on("finish", () => {
-        file.close();
-        console.log(`Download completed for ${fileName} version ${label}`);
-      });
+    // convert the json data into a file to be uploaded
+    const jsonFile = new File([jsonData], fileName, {
+      type: "application/json",
     });
+
+    console.log(
+      `File name: ${fileName} version: ${label} label: ${fileLabel ?? "root"}`
+    );
+
+    const filePath = fileLabel ? `${fileLabel}/${fileName}` : `${fileName}`;
+
+    console.log(`Saving file to ${filePath}...`);
+
+    // Save the file to the bunny storage
+    const uploadResponse = await fetch(
+      `https://storage.bunnycdn.com/${process.env.BUNNY_STORAGE_BUCKET_NAME}/${filePath}`,
+      {
+        method: "PUT",
+        headers: {
+          AccessKey: process.env.BUNNY_STORAGE_ACCESS_KEY ?? "",
+          "Content-Type": "application/json",
+        },
+        body: jsonFile,
+      }
+    );
+
+    if (!uploadResponse.ok) {
+      console.error(`Failed to upload ${fileName} version ${label}`);
+      return;
+    }
   });
 });
