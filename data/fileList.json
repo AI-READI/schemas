@@ -47,6 +47,11 @@
         "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.0/docs/schemas/dataset_structure_description.schema.json",
         "label": "v0.1.0",
         "fileLabel": "v0.1.0"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AI-READI/cds-specification/v0.1.1/docs/schemas/dataset_structure_description.schema.json",
+        "label": "v0.1.1",
+        "fileLabel": "v0.1.1"
       }
     ]
   },
